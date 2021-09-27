@@ -1,0 +1,9 @@
+Code's of prime number , digit count , max of array , sum of array 
+are in package number class Num as functions.
+number package is imported in Driver program.
+Driver code has switchcase.
+
+basic code's are in basicassignment file's 
+
+Thank's alot.
+
