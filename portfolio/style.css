@@ -1,7 +1,7 @@
 *{
-    padding: 0%;
-    margin: 0%;
-    width: 100%;
+    padding: 0;
+    margin: 0;
+    transition: all 500ms ease;
 }
 
 body{
@@ -12,12 +12,13 @@ a{
     margin-right: 10%;
     font-size: 21px;
     text-decoration: none;
+    color: #545E75;
 }
 
 #nav{
     margin-top: 2%;
     width: 100%;
-    background-color: black;
+    padding-bottom: 5%;
 }
     
 #name{
@@ -37,15 +38,21 @@ a{
 #header{
     padding: 12%;
     padding-bottom: 5%;
-    font-size: 50px;
+    padding-top: 8%;
+    font-size: 80px;
     text-align: left;
     line-height: 1;
+    color:#13293D;
 }
 
+#header:hover{
+    color: white;
+    background-color: rgba(0,0,0,.2);
+}
 
 span{
     text-align: center;
-    font-size: 80px;
+    font-size: 50px;
 }
 
 
@@ -54,22 +61,85 @@ span{
     text-align: center;
     padding: 2%;
     font-size: 25px;
+    background-color: rgba(0,0,0,.2);
 }
 
 #main{    
     text-align: left;
     font-size: 21px;
     padding: 5%;
+    color: #000000;
+    font-family:"Calibri, sans-serif";
 }
 
 h1{
     text-align: left;
     padding: 3%;
+    color:#201E1F;
+}
+
+h2{
+    text-align: left;
+    padding: 2%;
+    padding-left: 5%;
+    color:#201E1F;
+}
+
+h1:hover{
+    background-color: ;
 }
 
 p{
     width: 50%;
     padding: 1%;
     font-size: 21px;
+    margin-left: 5%;
+}
+
+table{
+padding-bottom: 13%;
+width: 40%;
+text-align: center;
+border-collapse: collapse;
+margin-left: 8%;
+}
+
+
+tr{
+}
+
+th{
+}
+
+td{
+    padding: 1%;
+    margin: 2%;
+}
+
+td:hover{
+    margin: auto;
+    background-color: #13293D;
+    font-weight: bold;
+    color: white;
+}
+
+ul {
+    border-left: 5px solid #13293D;
+    background-color: #1fe0;
+    list-style-type: none;
+    padding: 10px 20px;
+    margin-left: 6%;
+}
+
+li:hover , a:hover{
+    padding: 1px;
+    font-weight: bold;
+    color: white;
+    background-color: #13293D;
+    cursor: pointer;
+    width: 100%;
+}
+
+img{
     margin-left: 5%;
 }
