@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 21px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-image: image("./stacked-waves-haikei.svg");
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    margin: 5%;
+    margin-bottom: 1%;
+}
+
+.logo{
+    font-size: 50px;
+    margin-right:auto;
+}
+
+.links
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 45px;
+    gap: 1rem;
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+
+.feature{
+    width: 100%;
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+main{
+display: flex;
+flex-direction: column;
+place-items: center;
+gap: 1rem;
+margin: 5%;
+}
+
+strong{
+    font-size: 50px;
+}
+
+.tag > div{
+font-size: 50px;
+}
+
+.tag{
+    display:flex;
+    flex-direction: row;
+    place-items:center;
+    background-color: yellow;
+}
+
+footer{
+display: flex;
+flex-direction:row-reverse;
+}
