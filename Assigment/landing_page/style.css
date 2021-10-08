@@ -4,10 +4,16 @@
     font-size: 21px;
 }
 
+a:hover{
+    background-color: yellow;
+    color:black;
+    padding: 3%;
+}
+
 .container{
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-image: image("./stacked-waves-haikei.svg");
+    background-color: rgba(241, 241, 38, 0.1);
 }
 
 header{
@@ -34,6 +40,7 @@ header{
 a{
 text-decoration: none;
 color: black;
+padding: 3%;
 }
 
 .feature{
@@ -59,14 +66,164 @@ strong{
 font-size: 50px;
 }
 
+.tag > div:hover{
+    font-size: 50px;
+    background-color: white;
+}
+
 .tag{
     display:flex;
     flex-direction: row;
     place-items:center;
     background-color: yellow;
+    padding: 5%;
+    margin: 5%;
 }
 
 footer{
-display: flex;
-flex-direction:row-reverse;
+text-align: center;
+padding: 3%;
 }
+
+h1{
+    font-size: 40px;
+    margin: 3%;
+}
+
+h2{
+    font-size: 30px;
+    margin: 3%;
+}
+
+p{
+    font-size: 25px;
+    margin: 2%;
+}
+
+
+img:hover{
+    box-shadow:5px 5px 5px grey;
+}
+
+footer > div{
+    padding: 1%;
+}
+
+
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    *{
+        margin: 0;
+        padding: 0; 
+    }
+
+    p{
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        width: 360px;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+  
+    .tag{
+        display: flex;
+        flex-direction: column;
+        margin-left:5% ;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .logo{
+        font-size: 20px;
+        margin-right: 5%;
+        padding: 5%;
+        color: black;
+    }
+    
+    .links
+    {
+        font-size: 1px;
+        display:flow-root;
+        padding: 2%;
+        margin:0;
+    }
+    
+    h2{
+        font-size: 20px;
+        padding: 1%;
+    }
+    
+    p{
+        padding: 5%;
+        margin: 5%;
+        width: 360px;
+    }
+
+    main{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 360px;
+    background-color: transparent;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-left: 1%;
+    }
+    
+    main strong{
+        font-size: 16px;
+        padding-bottom:5%;
+        margin-bottom: 5%;
+    }
+    
+    section{
+        margin: 0;
+        background-color: rgb(159, 198, 241);
+        width: 360px;
+        justify-content: center;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    
+    footer{
+        text-align: center;
+        width:360px;
+        padding:0;
+        margin:0;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .feature{
+        display:list-item;
+        width: 360px;
+    }
+
+    img{
+        width: 80%;
+        height: 80%;
+        padding: 2%;
+    }
+
+    .vr{
+        place-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .info p{
+        margin: 0;
+        padding: 0;
+    }
+
+    }
